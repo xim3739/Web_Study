@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>카드 정보 입력</legend>
+        <ol>
+          <li><fieldset>
+            <legend>카드 타입</legend>
+            <input type="radio" name="card" value="visa">VISA
+            <input type="radio" name="card" value="amex">AmEx
+            <input type="radio" name="card" value="masterCard">MasterCard
+          </fieldset></li>
+          <li>카드 번호 <input type="number" name="cardNumber"></li>
+          <li>CRC 번호 <input type="number" name="crcNumber"></li>
+          <li>소유자 이름 <input type="text" name="name" placeholder="카드 상의 이름"></li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <input type="submit" name="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
