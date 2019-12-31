@@ -1,0 +1,7 @@
+table {
+  font-size: 30px;
+}
+
+td.td_line {
+  border-left: 1px solid green;
+}

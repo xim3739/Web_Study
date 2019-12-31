@@ -1,0 +1,30 @@
+div {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+
+  text-align: center;
+
+  margin-right: 50%;
+  
+  border: 1px solid black;
+}
+
+#div_two {
+  position: relative;
+  top: -152px;
+  left: 150px;
+  border: 1px solid black;
+}
+
+#div_three {
+  position: relative;
+  top:-152px;
+  border: 1px solid black;
+}
+#div_four {
+  position: relative;
+  top: -304px;
+  left: 150px;
+  border: 1px solid black;
+}

@@ -1,0 +1,15 @@
+a {
+  font-size: 50px;
+}
+
+a#a_hover:hover {
+  color: pink;
+}
+
+a#a_visited:visited {
+  color: green;
+}
+
+a#a_link:link {
+  color: yellow;
+}

@@ -1,0 +1,18 @@
+table {
+  border: 3px solid black;
+  font-size: 50px;
+  empty-cells: hide;
+  background-color: yellow;
+}
+
+td {
+  border: 3px solid black;
+}
+
+tr#tr_first {
+  background-color: red;
+}
+
+tr#tr_second {
+  background-color: yellow;
+}
