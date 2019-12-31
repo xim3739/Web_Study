@@ -1,0 +1,17 @@
+a:link{
+  text-decoration : line-through;
+  color : blue;
+  background-color : white;
+}
+
+a:visited{
+  text-decoration : none;
+  color : green;
+  background-color : silver;
+}
+
+a:hover{
+  text-decoration : overline;
+  color : red;
+  background-color : yellow;
+}

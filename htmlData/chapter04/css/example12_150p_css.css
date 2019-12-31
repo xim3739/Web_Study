@@ -1,0 +1,16 @@
+h1, h2 {
+  color: green;
+}
+
+strong {
+  color: blue;
+  font-weight: bold;
+}
+
+em {
+  color: red;
+}
+
+ul.ul_menu {
+  color: red;
+}
