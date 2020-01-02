@@ -1,0 +1,9 @@
+p#p_main_text {
+  position: absolute;
+  color: blue;
+}
+
+p#p_shadow_text {
+  position: absolute;
+  left: 10px;
+}

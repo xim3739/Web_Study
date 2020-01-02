@@ -1,0 +1,54 @@
+#div_header {
+  position: relative;
+
+  width: 100%;
+  height: 50px;
+  background-color: silver;
+
+  text-align: center;
+
+  border-radius: 30px;
+}
+#div_header_text {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 50%;
+  right: 50%;
+}
+
+#div_nav {
+  float: left;
+
+  width: 20%;
+  height: 700px;
+  background-color: pink;
+
+  text-align: center;
+
+  border-radius: 30px;
+}
+
+#div_contents {
+  float: right;
+
+  width: 80%;
+  height: 700px;
+  background-color: lightblue;
+
+  text-align: center;
+
+  border-radius: 30px;
+}
+
+#div_footer {
+  clear: both;
+
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+
+  text-align: center;
+
+  border-radius: 30px;
+}

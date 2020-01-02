@@ -1,0 +1,34 @@
+#div_header {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+
+  background-color: silver;
+
+}
+
+#div_nav {
+  float: left;
+  width: 10%;
+  height: 300px;
+
+  background-color: aqua;
+
+}
+
+#div_content {
+  float: right;
+  width: 90%;
+  height: 300px;
+
+  background-color: lightgreen;
+
+}
+
+#div_footer {
+  clear: both;
+  text-align: center;
+
+  background-color: silver;
+
+}

@@ -1,0 +1,36 @@
+#div_header1 {
+  width: 100%;
+  height: 30px;
+  background-color: yellow;
+}
+#div_header2 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+#article_1 {
+  float: left;
+  width: 33%;
+  height: 300px;
+  background-color: blue;
+}
+
+#article_2 {
+  display: inline-block;
+  width: 34%;
+  height: 300px;
+  background-color: green;
+}
+#article_3 {
+  float: right;
+  width: 33%;
+  height: 300px;
+  background-color: purple;
+}
+
+#footer_1 {
+  clear: both;
+  width: 100%;
+  height: 50px;
+  background-color: silver;
+}
