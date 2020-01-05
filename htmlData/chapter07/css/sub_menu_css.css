@@ -1,0 +1,27 @@
+aside#aside_left {
+  width: 10%;
+}
+
+aside#aside_left>ul {
+  list-style: none;
+  background-color: black;
+  padding: 0px;
+}
+
+aside#aside_left ul li {
+  line-height: 50px;
+  border-bottom: 0.25px solid white;
+  text-align: center;
+}
+
+aside#aside_left ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+aside#aside_left ul li a:hover {
+  display: block;
+  color: black;
+  background-color: white;
+  transition: 1s;
+}

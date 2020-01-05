@@ -1,0 +1,136 @@
+header>div {
+  margin-left: 40%;
+  margin-right: 0;
+  margin-top: 2%;
+}
+#header_main_name {
+  font-size: 50px;
+  text-decoration: none;
+}
+body {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+/*
+ nav
+ */
+nav>ul {
+  text-align: center;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  padding: 20px;
+}
+nav>ul>li {
+  display: inline-block;
+  width: auto%;
+  letter-spacing: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+nav>ul>li>a{
+  text-decoration: none;
+  color: black;
+}
+nav>ul>li>a:hover{
+  text-decoration: none;
+  color: red;
+}
+/*
+aside & form
+*/
+aside#aside_category {
+  float: left;
+  width: 10%;
+  height: 700px;
+}
+aside#aside_category>ul {
+  list-style: none;
+  background-color: black;
+  padding: 0px;
+}
+aside#aside_category ul li {
+  line-height: 50px;
+  border-bottom: 0.25px solid white;
+  text-align: center;
+}
+aside#aside_category ul li a {
+  text-decoration: none;
+  color: white;
+}
+aside#aside_category ul li a:hover {
+  display: block;
+  color: black;
+  background-color: white;
+  transition: 1s;
+}
+aside#aside_computer {
+  float: right;
+  width: 25.5%;
+}
+/*
+article & section
+*/
+section#section_article {
+  padding: 9px;
+  width: 63%;
+  float: left;
+}
+article#article_first {
+  float: left;
+  width: 48%;
+  height: 350px;
+  border: 1px solid black;
+  margin-left: 20px;
+  overflow: auto;
+}
+article#article_second {
+  display: inline-block;
+  width: 48%;
+  height: 350px;
+  border: 1px solid black;
+  overflow: auto;
+}
+article#article_third {
+  float: left;
+  width: 48%;
+  height: 350px;
+  border: 1px solid black;
+  margin-left: 20px;
+  overflow: auto;
+}
+article#article_four {
+  display: inline-block;
+  width: 48%;
+  height: 350px;
+  border: 1px solid black;
+  overflow: auto;
+}
+footer {
+  clear: both;
+  text-align: center;
+}
+#container {
+  width: auto;
+}
+#section_article {
+  width: auto;
+  float: none;
+}
+#section_article img {
+  width: 50%;
+  height: 200px;
+  margin-left: 25%;
+}
+#section_article h3 {
+  text-align: center;
+}
+#section_article ul {
+  background-color: lightgray;
+  background: radial-gradient(circle at 50% 50%, white, silver);
+}
+#aside_computer {
+  width: auto;
+  float: none;
+}
