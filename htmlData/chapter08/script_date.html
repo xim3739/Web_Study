@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function calc() {
+        var x = document.getElementById("number1").value;
+        var y = document.getElementById("number2").value;
+        if (x === "0" || x === "" || y === "0" || y === "") {
+          alert("정신차렷");
+          document.getElementById("number1").focus();
+          return false;
+        }
+        var sum = parseInt(x) + parseInt(y);
+        document.getElementById("result").value = sum;
+      }
+    </script>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      숫자1<input type="text" id="number1" value="10"/>
+      숫자2<input type="text" id="number2" value="10">
+      계산 <input type="text" id="result" value="10">
+    </form>
+    <button type="button" name="button"
+      onclick="calc();"></button>
+  </body>
+</html>

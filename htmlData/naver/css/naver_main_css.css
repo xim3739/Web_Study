@@ -1,0 +1,322 @@
+body {
+  margin: 0px;
+}
+/* a */
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  border-bottom: 1px solid silver;
+}
+.div_center {
+  width: 1100px;
+  margin: 0 auto;
+}
+#header_start_page {
+  text-align: right;
+  font-size: 13px;
+  padding: 10px;
+}
+#header_start_page a {
+  text-decoration: none;
+  color: gray;
+}
+#header_start_page a:hover {
+  text-decoration: underline;
+  color: silver;
+}
+#header_start_page #hover_none:hover {
+  text-decoration: none;
+}
+#header_search {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+header #junior_naver {
+  display: inline-block;
+  width: 58px;
+  height: 11px;
+  background-position: 0px -157px;
+  background-image:url(../img/sp_main_v191212.png);
+  background-repeat: no-repeat;
+}
+header #junior_naver:hover {
+  display: inline-block;
+  width: 58px;
+  height: 11px;
+  background-position: -68px -158px;
+  background-image:url(../img/sp_main_v191212.png);
+  background-repeat: no-repeat;
+}
+header #naver_search_img {
+  display: inline-block;
+  width: 147px;
+  height: 90px;
+  background-position: -62px 0px;
+  background-image:url(../img/naver_main.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+#header_search fieldset {
+  display: inline-block;
+  width: 521px;
+  height: 48.99px;
+  border: 1px solid #03cf5d;
+  box-sizing: border-box;
+  position: relative;
+  top:-35px;
+  padding-top: 10px;
+  margin: 0px;
+}
+#header_search fieldset input {
+  width: 80%;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+}
+#header_search fieldset button {
+  width: 10%;
+  height: 47.98px;
+  padding: 0;
+  border: 0;
+  background-color: #03cf5d;
+  position: absolute;
+  top: -1px;
+  right: 0px;
+}
+#header_search #search_img {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/sp_main_v191212.png);
+  background-position: -196px 5px;
+  background-repeat: no-repeat;
+}
+
+/* nav */
+nav {
+  border-bottom: 1px solid silver;
+  padding: 8px;
+}
+nav #nav_center {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+nav ul li a {
+  color: green;
+}
+nav ul li a:hover {
+  color: lightgreen;
+  transition: 0.1s;
+}
+nav #div_search_content {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  width: 198px;
+  height: 30px;
+}
+nav #nav_div_ranking ul{
+  position: absolute;
+  right: -1px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 332px;
+  height: 334px;
+  border: 1px solid gray;
+  background-color: white;
+  display: none;
+  z-index: 10;
+}
+nav #nav_div_ranking ul li {
+  display: block;
+}
+nav #nav_div_ranking:hover ul{
+  display: block;
+}
+/* main of banner & login*/
+main {
+  margin: 0 auto;
+  background-color: lightgray;
+}
+section #naver_ad_banner {
+  display: inline-block;
+  background-image: url(../img/ad.jpg);
+  width: 100%;
+  height: 120px;
+  background-repeat: no-repeat;
+}
+section #naver_login {
+  display: inline-block;
+  background-image: url(../img/login.png);
+  width: 100%;
+  height: 48px;
+  background-repeat: no-repeat;
+  margin-left: 25px;
+}
+#main_banner_login {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+#div_main_banner {
+  display: inline-block;
+  width: 67%;
+  height: 120px;
+  background-color: white;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#div_main_login {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  width: 30%;
+  height: 120px;
+  background-color: white;
+  border: 1px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#div_main_login p {
+  font-size: 11px;
+  color: gray;
+}
+#div_main_login .anchor_login {
+  font-size: 11px;
+  color: gray;
+}
+#div_main_login .anchor_login:hover {
+  text-decoration: underline;
+}
+#div_sign_up {
+  display: inline-block;
+  width: 70%;
+  color: gray;
+  text-align: right;
+}
+#div_sign_up #anchor_sign_up {
+  font-size: 11px;
+  color: gray;
+}
+
+/* main of news */
+#main_news {
+  position: relative;
+  background-color: lightgray;
+  width: 1100px;
+  height: 320px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#div_headr_news {
+  position: absolute;
+  width: 67%;
+  height: 50px;
+  border: 1px solid white;
+  background-color: white;
+}
+#div_short_cut_news {
+  position: absolute;
+  width: 30%;
+  height: 125px;
+  border: 1px solid white;
+  background-color: white;
+  right: 0px;
+}
+#div_main_news {
+  position: absolute;
+  width: 67%;
+  height: 250px;
+  border: 1px solid white;
+  background-color: white;
+  bottom: 0px;
+}
+#div_ad_news {
+  position: absolute;
+  width: 30%;
+  height: 175px;
+  border: 1px solid white;
+  background-color: white;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* main contents */
+#main_contents {
+  position: relative;
+  background-color: lightgray;
+  height: 550px;
+  width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#div_main_contents {
+  position: absolute;
+  width: 67%;
+  height: 548px;
+  border: 1px solid white;
+  background-color: white;
+}
+#div_main_sub_contents {
+  position: absolute;
+  right: 0px;
+  width: 30%;
+  height: 548px;
+  border: 1px solid white;
+  background-color: white;
+}
+/* main of bottom */
+#main_bottom {
+  position: relative;
+  background-color: lightgray;
+  height: 210px;
+  width: 1100px;
+  margin: 0 auto;
+}
+#div_main_bottom_ad {
+  position: absolute;
+  width: 67%;
+  height: 198px;
+  border: 1px solid white;
+  background-color: white;
+}
+#div_main_bottom_sub_ad {
+  position: absolute;
+  right: 0px;
+  width: 30%;
+  height: 198px;
+  border: 1px solid white;
+  background-color: white;
+}
+/* footer */
+#footer {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  border: 1px solid white;
+  background-color: white;
+}
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
