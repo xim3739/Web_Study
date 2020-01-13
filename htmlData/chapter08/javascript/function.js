@@ -95,6 +95,7 @@ function example11() {
     case 'F': alert("F Good");
       break;
     default: alert("are you crazy?");
+      break;
   }
 }
 
