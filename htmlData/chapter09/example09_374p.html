@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var arr = ["Hello", 10, 32.6, true];
+    </script>
+  </head>
+  <body>
+
+    input <input type="text" id="inputText"><br>
+    <button type="button" onclick="find(arr)"></button>
+
+    <script>
+      function find(arr) {
+        console.log(typeof(value));
+        var value = document.getElementById("inputText").value;
+        var strArr = arr.join();
+        var resultArr = strArr.split(",")
+        var i = 0;
+        var result = null;
+        for(i = 0; i < resultArr.length; i++) {
+          if(resultArr[i] === value) {
+            result = value;
+          }
+        }
+        if(result !== null) {
+          alert(result);
+        } else {
+          alert("없습니다.");
+        }
+      }
+    </script>
+
+  </body>
+</html>

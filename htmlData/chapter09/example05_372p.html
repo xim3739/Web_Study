@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    입력 : <input type="text" id="inputText"><br/>
+    결과 : <input type="text" id="resultText"><br/>
+    <button type="button" onclick="strCap();">검사</button>
+    <script>
+      function strCap() {
+        var str = document.getElementById("inputText").value;
+        var firstStr = str.replace(/^./, str[0].toUpperCase());
+        document.getElementById("resultText").value = firstStr;
+      }
+    </script>
+  </body>
+</html>

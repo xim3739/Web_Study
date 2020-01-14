@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function checkDate() {
+        var s = document.getElementById("pdate").value;
+        var pdate = new Date(s);
+        var today = new Date();
+        var diff = today.getTime() - pdate.getTime();
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        if(days > 30) {
+          alert("교환 기간이 지났습니다.");
+        }
+      }
+    </script>
+    <script>
+      function checkID() {
+        var s = document.getElementById("id").value;
+        if(s.length < 6) {
+          alert("6글자 이상이여야 합니다.");
+        }
+      }
+    </script>
+    <script>
+      function calc(type) {
+        var x = Number(document.cal.number1.value);
+        var y = 0;
+        if(type === 1) {
+          y = Math.sin((x * Math.PI) / 180.0);
+        } else if(type === 2) {
+          y = Math.log(x);
+        } else if (type === 3) {
+          y = Math.sqrt(x);
+        } else if (type === 4) {
+          y = Math.abs(x);
+        }
+        document.cal.total.value = y;
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      function Point(xpos, ypos) {
+        this.x = xpos;
+        this.y = ypos;
+      }
+      Point.prototype.getDisance = function(p) {
+        return Math.sqrt(this.x * this.x + this.y * this.y);
+      }
+      var p1 = new Point(10, 20);
+      var d1 = p1.getDisance();
+      var p2 = new Point(10, 30);
+      var d2 = p2.getDisance();
+      document.write(d1 + "<br/>");
+      document.write(d2 + "<br/>");
+    </script>
+    <br>
+    <br>
+
+    <script>
+      var d1 = new Date(2013, 7 , 21, 0, 0, 0);
+      var d2 = new Date("January 20, 2013 11:13:00");
+      document.write(d1 + "<br/>");
+      document.write(d2 + "<br/>");
+    </script>
+    <br>
+    <br>
+    구입날짜:
+    <input type="date" id="pdate">
+    <button type="button" onclick="checkDate();">검사</button>
+    <br>
+    <br>
+    <div id="remaining">
+      <script>
+        function dateUntilNewYear() {
+          var now = new Date();
+          var newYear = new Date("January 1," + (now.getFullYear() + 1));
+          var diff = newYear - now;
+          var milliseconds = Math.floor(diff % 1000);
+          diff = diff / 1000;
+          var seconds = Math.floor(diff % 60);
+          diff = diff / 60;
+          var minutes = Math.floor(diff % 60);
+          diff = diff / 60;
+          var hours = Math.floor(diff % 24);
+          diff = diff / 24;
+          var days = Math.floor(diff);
+
+          var outStr = "내년도 신정까지 " + days + " 일 " + hours + " 시간 " + minutes;
+          outStr += " 분 " + seconds + " 초 " + "남았습니다.";
+
+          document.getElementById("remaining").innerHTML = outStr;
+          setTimeout("dateUntilNewYear()", 1000);
+        }
+
+        dateUntilNewYear();
+      </script>
+    </div>
+
+    id : <input type="text" id="id" size="10">
+    <button type="button" onclick="checkID();" name="button">검사</button>
+    <br>
+    <br>
+
+    <script>
+      var s = "자바 스크립트에 오신 것을 환영합니다."
+      var n = s.indexOf("환영");
+      document.write(n + "<br/>");
+    </script>
+    <br>
+    <br>
+
+    <script>
+      var str = "Like father, like son";
+      result = str.match(/like/ig);
+      document.writeln(result + "<br/>");
+    </script>
+    <br>
+    <br>
+
+    <script>
+      var str = "Hong's number is 123-4567";
+      result = str.replace("Hong's", "Kim's");
+      document.writeln(result);
+    </script>
+    <br>
+    <br>
+
+    <script>
+      var s = "This is a test";
+      document.write("Big : " + s.big() + "<br/>");
+      document.write("Small : " + s.small() + "<br/>");
+      document.write("Bold : " + s.bold() + "<br/>");
+      document.write("Italic : " + s.italics() + "<br/>");
+      document.write("Fixed : " + s.fixed() + "<br/>");
+      document.write("Strike : " + s.strike() + "<br/>");
+      document.write("FontColor : " + s.fontcolor("green") + "<br/>");
+      document.write("FontSize : " + s.fontsize(6) + "<br/>");
+      document.write("Subscript : " + s.sub() + "<br/>");
+      document.write("Superscript : " + s.sup() + "<br/>");
+      document.write("Link : " + s.link("http://www.google.com") + "<br/>");
+    </script>
+    <br>
+    <br>
+
+    <form name="cal" action="index.html" method="post">
+      입력 : <input type="text" name="number1" value=""><br/>
+      계산 결과 : <input type="text" name="total" value=""><br/>
+      <input type="button" value="SIN" onclick="calc(1);">
+      <input type="button" value="LOG" onclick="calc(2);">
+      <input type="button" value="SQRT" onclick="calc(3);">
+      <input type="button" value="ABS" onclick="calc(4);">
+    </form>
+    <br>
+    <br>
+
+    <script>
+      var array = [10, 7, 23, 99, 169, 19, 11, 1];
+      array.sort();
+      document.write(array + "<br/><br/>");
+      array.sort(function (a, b) {
+        return a - b;
+      });
+      document.write(array + "<br/><br/>");
+      var array2 = [1,2,3,4,5,6,7,8,9,10];
+      var newArray2 = array2.slice(5);
+      document.write(newArray2 + "<br/><br/>");
+
+      var fruits = ["apple","banana","peach"];
+      var s = fruits.join(", ");
+      document.write(s + "<br/><br/>");
+    </script>
+  </body>
+</html>

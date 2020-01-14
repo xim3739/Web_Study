@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    input <input type="text" id="inputText"><br>
+    <button type="button" onclick="check();"></button>
+
+    <script>
+      function check() {
+        var str = document.getElementById("inputText").value;
+        alert(str.includes("XXX"));
+      }
+    </script>
+
+  </body>
+</html>
