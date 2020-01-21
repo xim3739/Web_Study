@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./script/script.js"></script>
+    <style>
+        #divExample08{
+            width: 400px;
+            height: 250px;
+            padding: 10px;
+            border: 1px dotted red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="divExample08" ondrop="handleDrop(event)" ondragover="allowDrop(event)">
+    </div>
+    <button id="btExample08" draggable="true" ondragstart="dragStartHandler(event)">Drag Me!!!</button>
+    <br/>
+    <br/>
+    <p>SVG를 이용한 사각형 생성</p>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="500">
+        <rect width="1000" height="500" style="fill : rgb(255,0,0); stroke-width : 3; stroke : rgb(128,128,128)"/>
+    </svg>
+</body>
+</html>

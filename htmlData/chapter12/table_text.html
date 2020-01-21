@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/table_test_css.css">
+  </head>
+  <body>
+    <script>
+      var s = '[' + '{"name":"hong","age":"21","role":"1"},' +
+              '{"name":"kim","age":"22","role":"2"},' +
+              '{"name":"park","age":"23","role":"3"}]';
+      var array = JSON.parse(s);
+
+      document.write("<table>");
+      document.write("<tr>" +
+        "<th>" + "name" + "</th>" +
+        "<th>" + "age" + "</th>" +
+        "<th>" + "role" + "</th>" +
+        "</tr>");
+        
+      for(i = 0; i < array.length; i++) {
+        document.write("<tr>");
+        document.write("<td>" + array[i].name + "</td>");
+        document.write("<td>" + array[i].age + "</td>");
+        document.write("<td>" + array[i].role + "</td>");
+        document.write("</tr>");
+      }
+      document.write("</table>");
+
+    </script>
+  </body>
+</html>

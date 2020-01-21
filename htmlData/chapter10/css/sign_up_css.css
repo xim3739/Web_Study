@@ -1,0 +1,39 @@
+#div_form_box {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+#div_text {
+  position: absolute;
+  display: inline-block;
+  width: 147px;
+  height: 249px;
+  left: 0;
+  top: 0;
+}
+#div_text p {
+  padding: 0;
+  margin: 13px;
+}
+#div_input {
+  position: absolute;
+  display: inline-block;
+  right: 200px;
+  top: 0;
+}
+#div_input input {
+  font-size: 11px;
+  margin: 8.8px;
+  padding: 0;
+}
+#div_alert_text {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: -42px;
+  padding: 2px;
+}
+#div_alert_text p {
+  margin: 13px;
+  padding: 0px;
+}

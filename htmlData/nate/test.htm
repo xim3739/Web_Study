@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///Users/xim/Developer/Web_Study/htmlData/chapter11/test.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <style>
+      table{
+        border : 1px solid black;
+      }
+      table tr, td {
+        border : 1px solid black;
+        padding : 10px;
+      }
+    </style>
+    <script src="./test_files/text.js">
+
+    </script>
+  </head>
+  <body>
+    <table>
+      <tbody><tr>
+        <td>이름</td>
+        <td><input type="text" id="inputName"> <span id="nameCheck">다시 확인해 주세요.</span> </td>
+      </tr>
+      <tr>
+        <td>주민등록 번호</td>
+        <td><input type="text" id="inputFirstNum"> - <input type="text" id="inputSecondNum"></td>
+      </tr>
+      <tr>
+        <td>아이디</td>
+        <td><input type="text" id="inputId"><input type="button" onclick="idCheck();" value="확인"></td>
+      </tr>
+    </tbody></table>
+    <input type="button" onclick="submit();" value="등록">
+    <input type="button" onclikc="resetButton();" value="취소">
+  
+
+</body></html>

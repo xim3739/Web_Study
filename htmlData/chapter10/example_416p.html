@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./javascript/script.js"></script>
+    <link rel="stylesheet" href="./css/sign_up_css.css">
+  </head>
+  <body>
+    <p>Event!!!</p>
+    <button type="button" onclick="example05()">click ME!</button>
+    <br>
+    <br>
+    <p id="example06P">click button</p>
+    <button type="button" onclick="example06()">change</button>
+    <br>
+    <br>
+    숫자를 입력하세요 <br>
+    <input type="text" id="inputText">
+    <button type="button" id="checkButton" onclick="example07()">입력완료</button>
+    <br>
+    <br>
+    <img src="./img/coffee.jpg" width="300" height="300" id="imgs" onclick="example08()">
+    <br>
+    <br>
+    <form method="post">
+      전화번호(-없이 입력) : <input type="text" id="phone"/>
+      <input type="button" onclick="checkNumberic(document.getElementById('phone'), '숫자만 입력하세요')" value="확인"/>
+    </form>
+    <br>
+    <br>
+    <form method="post">
+      과일 선택
+      <select id="fruits">
+        <option value="0">choice</option>
+        <option value="1">banana</option>
+        <option value="2">pear</option>
+        <option value="3">apple</option>
+      </select>
+      <input type="button" onclick="checkSelection(document.getElementById('fruits'), 'choice please')" value="click"/>
+    </form>
+    <br>
+    <br>
+    <form method="post">
+      <h3>회원 신청서</h3>
+      <div id="div_form_box">
+        <div id="div_text">
+          <p>이름</p>
+          <p>성별</p>
+          <p>휴대폰 번호Phone</p>
+          <p>이메일</p>
+          <p>패스워드(6 - 8)</p>
+          <p>패스워드 검증</p>
+        </div>
+        <div id="div_input">
+          <input type="text" id="idText"><br>
+          <input type="radio" name="r1" value="v1">남자
+          <input type="radio" name="r1" value="v2">여자 <br>
+          <input type="text" id="phones"><br>
+          <input type="text" id="email"><br>
+          <input type="password" id="password"><br>
+          <input type="password" id="passwordCheck"><br>
+          <input type="button" id="checkButton" onclick="check();" value="입력">
+          <input type="button" id="resetButton" onclick="reset1();" value="초기화">
+        </div>
+        <div id="div_alert_text">
+          <p id="idCheck"></p>
+          <p id="genderCheck"></p>
+          <p id="phoneCheck"></p>
+          <p id="emailCheck"></p>
+          <p id="passCheck"></p>
+          <p id="passCheckCheck"></p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

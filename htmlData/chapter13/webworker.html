@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="startWorker()">웹 워커 시작</button>
+    <button onclick="stopWorker()">웹 워커 중지</button>
+    <p>현재까지 발견된 가장 큰 소수는<output id="result"></output>
+    </p>
+
+    <script>
+        var w;
+        function startWorker() {
+            if(typeof(Worker) !== "undefined") {
+                if(typeof(w) === "undefined") {
+                    w = new Worker("worker.js");
+                }
+                w.onmessage = function (event) {
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            } else {
+                document.getElementById("result").innerHTML = "지원 안함";
+            }
+        }
+
+        function stopWorker() {
+            w.terminate();
+        }
+    </script>
+</body>
+</html>

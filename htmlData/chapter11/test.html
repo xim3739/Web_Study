@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      table{
+        border : 1px solid black;
+      }
+      table tr, td {
+        border : 1px solid black;
+        padding : 10px;
+      }
+    </style>
+    <script src="./javaScript/text.js">
+
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>이름</td>
+        <td><input type="text" id="inputName"> <span id="nameCheck"> 공백없이 입력하세요</span> </td>
+      </tr>
+      <tr>
+        <td>주민등록 번호</td>
+        <td><input type="text" id="inputFirstNum"> - <input type="text" id="inputSecondNum"></td>
+      </tr>
+      <tr>
+        <td>아이디</td>
+        <td><input type="text" id="inputId"><input type="button" onclick="idCheck();" value="확인"></td>
+      </tr>
+    </table>
+    <input type="button" onclick="submit();" value="등록">
+    <input type="button" value="취소">
+  </body>
+</html>

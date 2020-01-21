@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./javascript/script.js"></script>
+    <script type="text/javascript">
+      var id = null;
+      function changeColor() {
+        id = setInterval(flashText, 500);
+      }
+      function flashText() {
+        var elem = document.getElementById("target");
+        elem.style.color = (elem.style.color == "red") ? "blue" : "red";
+        elem.style.backgroundColor = (elem.style.backgroundColor == "green") ? "yellow" : "green";
+      }
+      function stop() {
+        clearInterval(id);
+      }
+      function changeColorBody(setColor) {
+        document.getElementById("body").style.backgroundColor = setColor;
+      }
+    </script>
+  </head>
+  <body onload="changeColor();" id="body">
+    <ul>
+      <li>list item1</li>
+      <li>list item2</li>
+      <li>list item3</li>
+      <li>list item4</li>
+      <li>list item5</li>
+    </ul>
+    <script>
+      var list = document.getElementsByTagName('ul')[0];
+      var allItems = list.getElementsByTagName('li');
+
+      var i = 0;
+      var lenght = allItems.length;
+
+      for(var i = 0; i < lenght; i++) {
+        alert(allItems[i].firstChild.data);
+      }
+
+      var w;
+
+      function openWindow() {
+        w = window.open(' ', ' ', 'width = 200', 'height = 100');
+        w.document.write("<p> this is openWindow </p>");
+        w.moveTo(0, 0);
+      }
+
+      function moveWindow() {
+        w.moveBy(10, 10);
+        w.focus();
+      }
+
+      function maxopen(url, winattributes) {
+        var maxWindow = window.open(url, "", winattributes);
+        maxWindow.moveTo(0, 0);
+        maxWindow.resizeTo(screen.availWidth, screen.availHeight);
+      }
+
+    </script>
+
+    <img src="./img/coffee.jpg" id="img" width="120px" height="100px">
+    <input type="button" onclick="changeImg();" value="click">
+
+    <h3 id="heading">This is Heading</h3>
+
+    <input type="button" value="hide" onclick="document.getElementById('heading').style.visibility = 'hidden'"/>
+    <input type="button" value="show" onclick="document.getElementById('heading').style.visibility = 'visible'"/>
+
+    <form>
+      <input type="button" value="open" onclick="window.open('http://www.google.com', '_blank', 'width=300', 'height=300', true)">
+    </form>
+
+
+    <div id="target">
+      <p>This is a Text</p>
+    </div>
+    <button onclick="stop()">중지</button>
+
+    <br/>
+
+    <input type="button" onclick="openWindow();" value="open">
+    <input type="button" onclick="moveWindow();" value="move">
+
+    <br/>
+
+    <a href="#" onclick="maxopen('http://www.google.com', 'resize = 1, scrollbars = 1, status = 1'); return false"> 전체 화면 보기</a>
+
+    <a href="#" onclick="replace();">이동하기</a>
+    <script>
+      function replace() {
+        location.replace("http://www.google.com");
+      }
+    </script>
+
+    <form method="post">
+      <input type="radio" name="C1" value="v1" onclick="changeColorBody('lightblue')">파랑색
+      <input type="radio" name="C1" value="v2" onclick="changeColorBody('lightgreen')">초록색
+    </form>
+  </body>
+</html>
